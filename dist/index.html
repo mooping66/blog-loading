@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Blog Landing Page</title>
+  </head>
+  <body class="font-body">
+    <div class="bg-white shadow-md">
+      <header class="container mx-auto max-w-7xl flex flex-wrap items-center p-6 justify-between">
+        <div class="flex items-center text-sec hover:text-pri cursor-pointer transition">
+          <svg
+            class="fill-cerrentc h-8 w-8 mr-2"
+            viewBox="0 0 54 54"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
+              fill="#0083FF"
+            ></path>
+          </svg>
+          <span class="font-semibold text-xl font-title">TailwindNews</span>
+        </div>
+        <div class="md:hidden block">
+          <button
+            id="menu-open"
+            class="px-3 py-1 rounded bg-sec text-white hover:bg-purple-900 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <button
+            id="menu-close"
+            class="hidden px-3 py-1 rounded bg-sec text-white hover:bg-purple-900 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <nav id="menu-items" class="hidden md:flex md:items-center font-title w-full md:w-auto">
+          <ul class="text-lg">
+            <li class="my-3 md:my-0 block md:inline-block items-center mr-4">
+              <a href="#" class="text-pri hover:text-sec transition">Home</a>
+            </li>
+            <li class="my-3 md:my-0 block md:inline-block items-center mr-4">
+              <a href="#" class="text-pri hover:text-sec transition">About</a>
+            </li>
+            <li class="my-3 md:my-0 block md:inline-block items-center mr-4">
+              <a href="#" class="text-pri hover:text-sec transition">contact</a>
+            </li>
+            <li class="my-3 md:my-0 block md:inline-block items-center mr-4">
+              <a href="#" class="text-pri hover:text-sec transition">Product & Shop</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="container px-4 mx-auto max-w-5xl">
+      <div class="text-center py-10 sm:py-14">
+        <h1 class="text-3xl md:text-5xl font-bold font-title text-sec">
+          Latest Blog<br />
+          <span class="text-pri">Post</span>
+        </h1>
+        <p class="text-pri max-w-xs mx-auto py-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <input
+          type="search"
+          name=""
+          id=""
+          class="bg-ourbg px-3 py-2 rounded-3xl shadow-inner ring-sec focus:outline-none focus:ring-1"
+          placeholder="Search..."
+        />
+      </div>
+      <section class="main">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 sm:gap-y-12 lg:gap-y-16 gap-x-8 lg:gap-x-12"
+        >
+          <!-- first row -->
+          <div class="col-span-1 md:col-span-2 lg:col-span-3">
+            <a
+              href="#"
+              class="border border-gray-100 block md:flex rounded-3xl overflow-hidden transition duration-500 hover:shadow-xl mb-12"
+            >
+              <div class="md:w-1/2">
+                <img src="img/img1.jpg" alt="" class="" />
+              </div>
+              <div class="md:w-1/2 p-4 md:p-7">
+                <p class="px-3 py-1 bg-ourbg rounded text-sec text-xs inline">FEATURED</p>
+                <h2
+                  class="font-bold text-pri text-xl md:text-2xl font-title py-3 transition duration-200 hover:text-sec"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit beatae harum
+                  consequatur deleniti recusandae commodi consequuntur aliquam. Officia molestias
+                  accusantium ducimus amet in dolore corrupti libero perferendis provident veniam.
+                </p>
+                <div class="flex items-center">
+                  <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- first row -->
+          <!-- second row -->
+          <div class="blog-card">
+            <a href="#">
+              <img src="img/img2.jpg" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="text-gen pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae
+                  repellat eum ipsa dolorem, a id quis officia inventore voluptatem eveniet dicta
+                  incidunt, iusto odit impedit iste, repudiandae unde quam.
+                </p>
+                <div class="flex items-center">
+                  <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="#">
+              <img src="img/img3.jpg" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="text-gen pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae
+                  repellat eum ipsa dolorem, a id quis officia inventore voluptatem eveniet dicta
+                  incidunt, iusto odit impedit iste, repudiandae unde quam.
+                </p>
+                <div class="flex items-center">
+                  <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="#">
+              <img src="img/img4.jpg" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="text-gen pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae
+                  repellat eum ipsa dolorem, a id quis officia inventore voluptatem eveniet dicta
+                  incidunt, iusto odit impedit iste, repudiandae unde quam.
+                </p>
+                <div class="flex items-center">
+                  <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- second row -->
+          <!-- third row -->
+          <div class="blog-card col-span-1 lg:col-span-2">
+            <a href="#">
+              <img src="img/img5.jpg" alt="" class="lg:h-72 w-full" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="text-gen pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae
+                  repellat eum ipsa dolorem, a id quis officia inventore voluptatem eveniet dicta
+                  incidunt, iusto odit impedit iste, repudiandae unde quam.
+                </p>
+                <div class="flex items-center">
+                  <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="#">
+              <img src="img/img6.jpg" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="text-gen pb-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae
+                  repellat eum ipsa dolorem, a id quis officia inventore voluptatem eveniet dicta
+                  incidunt, iusto odit impedit iste, repudiandae unde quam.
+                </p>
+                <div class="flex items-center">
+                  <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- third row -->
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="text-center mx-auto py-12 sm:py-20 lg:py-32">
+          <h6 class="text-3xl md:text-5xl font-bold font-title text-pri">
+            Subscribe to Our <br />
+            <span class="text-sec">Blog</span>
+          </h6>
+          <p class="max-w-xs mx-auto text-pri py-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <input
+            type="email"
+            name=""
+            id=""
+            class="px-8 py-2 bg-ourbg rounded-3xl shadow-inner focus:outline-none"
+            placeholder="Email Address"
+          />
+          <input
+            type="submit"
+            value="Submit"
+            class="mt-4 sm:mt-0 sm:-ml-12 px-8 py-2 rounded-3xl bg-sec text-white hover:bg-blue-800 focus:outline-none focus:ring-1"
+          />
+        </div>
+      </section>
+    </div>
+    <footer class="bg-pri">
+      <div
+        class="sm:flex text-center px-12 text-white font-bold py-8 font-title font-extralight justify-between max-w-5xl mx-auto tracking-wider"
+      >
+        <p>TailwindCSS</p>
+        <p>All rights reserved @2021</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
